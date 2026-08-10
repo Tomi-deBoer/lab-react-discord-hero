@@ -6,11 +6,9 @@ import menuIcon from "./assets/menu-icon.png";
 function App() {
   return (
     <div className="App">
-
       <header>
-        <img src={discordLogo} alt="Discord logo" />
-
-        <img src={menuIcon} alt="Menu" />
+        <img className="logo" src={discordLogo} alt="Discord logo" />
+        <img className="menu" src={menuIcon} alt="Menu" />
       </header>
 
       <main>
@@ -28,7 +26,6 @@ function App() {
           <button>Open Discord in your browser</button>
         </div>
       </main>
-
     </div>
   );
 }
