@@ -2,6 +2,7 @@ import "./App.css";
 
 import discordLogo from "./assets/discord-logo-white.png";
 import menuIcon from "./assets/menu-icon.png";
+import discordBackground from "./assets/discord-background.png";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       </header>
 
       <main>
-        <h1>IMAGINE A PLACE...</h1>
+        <h1>
+          IMAGINE A<br />
+          PLACE...
+        </h1>
 
         <p>
           ...where you can belong to a school club, a gaming group,
@@ -22,10 +26,16 @@ function App() {
         </p>
 
         <div className="buttons">
-          <button>Download for Windows</button>
+          <button>Download for Mac</button>
           <button>Open Discord in your browser</button>
         </div>
       </main>
+
+      <img
+        className="background-art"
+        src={discordBackground}
+        alt=""
+      />
     </div>
   );
 }
